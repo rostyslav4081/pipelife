@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  loginForm: FormGroup;
+  loginForm!: FormGroup;
 
   constructor(
     private fb: FormBuilder,
