@@ -1,0 +1,9 @@
+.p-card {
+  background: #003087;
+  max-width: calc(100% / 3);
+  margin: 150px auto;
+}
+.compForm{
+  margin-top: 20px;
+}
+
