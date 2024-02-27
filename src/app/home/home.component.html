@@ -4,13 +4,61 @@
   </div>
   <div class="main">
     <div class="allBtns">
-      <button pButton label="Nahlásit příjezd (z aplikace)"></button>
-      <button pButton label="Registrovat vjezd (bez aplikace)"></button>
+      <button pButton label="Nahlásit příjezd (z aplikace)"
+              (click)="showBtn1.firstDiv = !showBtn1.firstDiv;showBtn1.start=false;showBtn1.firstDiv=true; showBtn1.next=false;">
+
+      </button>
+      <button pButton label="Registrovat vjezd (bez aplikace)"
+              (click)="showBtn2.secondDiv =!showBtn2.secondDiv;showBtn1.start=false;"
+      ></button>
     </div>
     <div class="content">
       <div class="start-right-content">
-        <img src="assets/Icon.svg" alt="iconPipeLife">
-        <h1>Zvolte způsob registrace vjezdu do závodu</h1>
+        <div *ngIf="showBtn1.start">
+          <img src="assets/Icon.svg" alt="iconPipeLife">
+          <h1>Zvolte způsob registrace vjezdu do závodu</h1>
+        </div>
+        <div *ngIf="showBtn1.firstDiv" class="firstDiv">
+          <img alt="qrCodePipeLife" src="assets/Qr-code.svg">
+          <h1>NASKENUJTE QR KÓD DO VAŠÍ APLIKACE</h1>
+        </div>
+        <div *ngIf="showBtn1.next" class="firstDiv">
+          <h1>VAŠE NAKLÁDKA JE REGISTROVÁNA NA:</h1>
+          <div class="info">
+            <h2 id="fullName">{{ fullName }} </h2>
+            <div id="SPZ">
+              <h2>SPZ: {{ SPZ }}</h2>
+            </div>
+          </div>
+          <p>pokračujte v aplikaci</p>
+        </div>
+        <div *ngIf="showBtn2.secondDiv" class="secondDiv">
+          <form [formGroup]="postForm" (ngSubmit)="postData()">
+            <h1>REGISTRUJTE VÁŠ VJEZD</h1>
+            <div class="p-grid p-fluid">
+              <div class="p-col-12 p-md-4 compForm">
+                <span class=" field p-float-label">
+                    <input type="text" id="fullNameForm" formControlName="fullNameForm" pInputText
+                           class="p-inputtext-sm">
+                        <label for="fullNameForm">Jméno a příjmení:</label>
+                </span>
+              </div>
+              <div class="p-col-12 p-md-4 compForm">
+                <span class="field p-float-label">
+                      <input type="text" id="SPZForm" formControlName="SPZForm" pInputText>
+                          <label for="SPZForm">SPZ Vozidla</label>
+                </span>
+              </div>
+
+
+              <div class="p-col-12 p-md-4 compForm">
+                <div>
+                  <button pButton label="DALŠÍ KROK" type="submit" [disabled]="postForm.invalid"></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
