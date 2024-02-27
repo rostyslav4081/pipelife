@@ -54,3 +54,129 @@
   max-width: 40px;
   max-height: 40px;
 }
+
+.firstDiv {
+  border: 2px solid #ffffff;
+  height: 30rem;
+  color: #ffffff;
+  width: 45rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding-top: 4rem;
+}
+
+.firstDiv img {
+  min-height: 18.5rem;
+  min-width: 18.5rem;
+}
+
+.firstDiv h1 {
+  padding-left: 12rem;
+}
+
+#SPZ {
+  background: #ffffff;
+  color: #003087;
+  border-radius: 8px;
+}
+
+.info {
+  width: 29rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info {
+  margin-top: 4rem;
+}
+
+.firstDiv p {
+  margin-top: 4rem;
+}
+
+.secondDiv {
+  border: 2px solid #ffffff;
+  height: 30rem;
+  color: #ffffff;
+  width: 45rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding-top: 4rem;
+}
+
+.compForm {
+  margin-top: 1.4rem;
+}
+
+.compForm button {
+  border: 2px solid #ffffff;
+}
+
+.secondDiv h1 {
+  margin-top: 6rem;
+  margin-left: 0.3rem;
+}
+
+.document {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  width: 45rem;
+  height: 30rem;
+  margin-top: 4rem;
+  padding: 4rem;
+}
+
+.document h1 {
+  margin-left: 0.1rem;
+  color: #003087;
+}
+
+.signature {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  margin-top: 4rem;
+  padding: 4rem;
+  border: 1px solid #ffffff;
+}
+
+.signature textarea {
+  min-height: 12rem;
+  width: 30rem;
+}
+
+.signature h1 {
+  margin-left: 1rem;
+}
+
+.signature button {
+  margin-top: 0.2rem;
+}
+
+.last {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  width: 47rem;
+  margin-top: 4rem;
+  padding: 4rem;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.last h1, p {
+  margin-left: 1rem;
+}
+
+
