@@ -20,4 +20,12 @@ export class HomeComponent {
     last: false
   }
 
+  constructor(private route: Router) {
+  }
+
+  ngOnInit(): void {
+    console.log(this.route.config[1].children);
+
+
+  }
 }
