@@ -6,20 +6,21 @@
     <div class="left">
 
       <button pButton label="Nahlásit příjezd (z aplikace)"
-              (click)="showBtn1.firstDiv = true;showBtn1.start=false; showBtn1.naladka=false; showBtn2.form=false"></button>
-
+              routerLink='start'></button>
+      <!--      showBtn1.firstDiv = true;showBtn1.start=false; showBtn1.naladka=false; showBtn2.form=false-->
       <button pButton label="Check-In"
               (click)="showBtn2.last = true; showBtn1.start=false; showBtn1.firstDiv=false; showBtn1.naladka=false;"></button>
       <button pButton label="Sběrky"></button>
     </div>
     <div class="right">
-      <app-start *ngIf="showBtn1.start"></app-start>
-      <app-qrcode *ngIf="showBtn1.firstDiv"></app-qrcode>
-      <app-naladka *ngIf="showBtn1.naladka"></app-naladka>
-      <app-form *ngIf="showBtn2.form"></app-form>
-      <app-document *ngIf="showBtn2.document"></app-document>
-      <app-signature *ngIf="showBtn2.signature"></app-signature>
-      <app-last *ngIf="showBtn2.last"></app-last>
+      <router-outlet></router-outlet>
+      <!--      <app-start *ngIf="showBtn1.start"></app-start>-->
+      <!--      <app-qrcode *ngIf="showBtn1.firstDiv"></app-qrcode>-->
+      <!--      <app-naladka *ngIf="showBtn1.naladka"></app-naladka>-->
+      <!--      <app-form *ngIf="showBtn2.form"></app-form>-->
+      <!--      <app-document *ngIf="showBtn2.document"></app-document>-->
+      <!--      <app-signature *ngIf="showBtn2.signature"></app-signature>-->
+      <!--      <app-last *ngIf="showBtn2.last"></app-last>-->
 
     </div>
   </div>
