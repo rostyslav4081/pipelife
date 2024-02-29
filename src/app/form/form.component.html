@@ -1,0 +1,23 @@
+<form [formGroup]="postForm" (ngSubmit)="postData()" class="postForm">
+  <h1>REGISTRUJTE VÁŠ VJEZD</h1>
+
+
+  <div class="all-inputs">
+    <span class=" field p-float-label">
+         <input type="text" id="fullNameForm" formControlName="fullNameForm" pInputText
+                class="p-inputtext-sm">
+                 <label for="fullNameForm">Jméno a příjmení:</label>
+   </span>
+
+
+    <span class="field p-float-label">
+          <input type="text" id="SPZForm" formControlName="SPZForm" pInputText>
+                 <label for="SPZForm">SPZ Vozidla</label>
+    </span>
+  </div>
+
+
+  <button pButton label="DALŠÍ KROK" type="submit" [disabled]="postForm.invalid"></button>
+
+
+</form>

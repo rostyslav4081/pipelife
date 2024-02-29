@@ -1,0 +1,21 @@
+.naladka {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7em;
+}
+
+.info {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.info h2 {
+  color: #ffff;
+}
+
+.naladka h1 {
+  color: #ffff;
+}

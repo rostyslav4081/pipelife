@@ -1,0 +1,15 @@
+.document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background: #ffff;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.document h1 {
+  color: #003087;
+}

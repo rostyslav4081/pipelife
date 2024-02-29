@@ -1,0 +1,21 @@
+.signature {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.signature textarea {
+  width: 100%;
+  height: 40vh;
+}
+
+.signature h1 {
+  color: #ffff;
+}
+
+.signature button {
+  min-width: 24rem;
+}

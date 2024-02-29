@@ -1,0 +1,18 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+
+}
+
+.start h1 {
+  color: #ffff;
+}
+
+.start img {
+  width: 4rem;
+  height: 4rem;
+}

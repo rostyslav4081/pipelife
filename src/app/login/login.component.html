@@ -1,35 +1,29 @@
-<div class="p-card">
-  <div class="block-logo compForm">
-    <div class="logo">
-      <img alt="pipeLife" src="assets/logo.svg" height="31" width="161">
-    </div>
-    <div>
-      <p>Logistika</p>
-    </div>
+<div class="main-login">
+  <div class="block-logo">
+    <img alt="pipeLife" src="assets/logo.svg" height="31" width="161">
+    <p>Logistika</p>
   </div>
-  <h2 class="main-text">Přihlášení do aplikace</h2>
-  <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <div class="p-grid p-fluid">
-      <div class="p-col-12 p-md-4 compForm">
-      <span class=" field p-float-label">
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()" class="main-form">
+    <h2 class="main-text">Přihlášení do aplikace</h2>
+    <div class="p-d-flex p-flex-wrap p-jc-center p-ai-center">
+      <div class="p-mb-2">
+          <span class="field p-float-label">
             <input type="text" id="name" formControlName="name" pInputText class="p-inputtext-sm">
             <label for="name">Uživatelské jméno: </label>
-        </span>
+          </span>
       </div>
-      <div class="p-col-12 p-md-4 compForm">
-      <span class="field p-float-label">
+      <div class="p-mb-2 ">
+          <span class="field p-float-label">
             <input type="password" id="password" formControlName="password" pInputText>
             <label for="password">Heslo:</label>
-        </span>
+          </span>
       </div>
 
+      <button pButton label="Přihlásit" type="submit" [disabled]="loginForm.invalid"></button>
 
-      <div class="p-col-12 p-md-4 compForm">
-        <div>
-          <button pButton label="Přihlásit" type="submit" [disabled]="loginForm.invalid"></button>
-        </div>
-      </div>
     </div>
-
   </form>
 </div>
+

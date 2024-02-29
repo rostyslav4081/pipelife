@@ -1,0 +1,18 @@
+.qrCode {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7em;
+
+}
+
+.qrCode h1 {
+  color: #ffff;
+}
+
+.qrCode img {
+  width: 18rem;
+  height: 18rem;
+}
